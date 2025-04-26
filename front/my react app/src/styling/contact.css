@@ -1,0 +1,43 @@
+.contact {
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.contact-title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366; 
+}
+
+
+
+.contact-p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    
+}
+
+.contact-li {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 10px 0;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,176 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e9f2 100%);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(67, 97, 238, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.login-container::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(67, 97, 238, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    z-index: 1;
+    position: relative;
+}
+
+.login-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+.login-form input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e0e6ed;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    background-position: 1rem center;
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+}
+
+.login-email {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a3a3a3' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
+}
+
+.login-password {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a3a3a3' viewBox='0 0 24 24'%3E%3Cpath d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z'/%3E%3C/svg%3E");
+}
+
+.login-form input:focus {
+    border-color: #4361ee;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.login-form input::placeholder {
+    color: #a3a3a3;
+}
+
+
+.login-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to right, #4cc9f0, #4361ee);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #4361ee, #4cc9f0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+.login-btn::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover::after {
+    opacity: 1;
+    right: 15px;
+}
+
+
+.error {
+    color: #ef233c;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+    animation: shake 0.5s ease;
+}
+
+.success {
+    color: #2b9348;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+    animation: fadeIn 0.5s ease;
+}
+
+
+.login-msg {
+    margin-top: 1.5rem;
+    color: #64748b;
+    text-align: center;
+    font-size: 0.95rem;
+    z-index: 1;
+}
+
+.login-msg a {
+    color: #4361ee;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.login-msg a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4361ee;
+    transition: width 0.3s ease;
+}
+
+.login-msg a:hover::after {
+    width: 100%;
+}
+    

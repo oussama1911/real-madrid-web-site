@@ -1,0 +1,66 @@
+.lastgames-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+.lastgame-div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.lastgame-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width:450px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #a5c4c6;
+    text-align: center;
+    
+   
+}
+
+.game-title {
+    font-size: 1.5rem;
+  
+    font-weight: 900;
+    color: #0d3195;
+    margin: 0;
+    flex: 2;
+}
+
+.game-score {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #292626;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.game-date {
+    color: #ffffff;
+    margin: 0;
+   
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+.lastgame-card:hover {
+    background-color: #4e85c9;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}

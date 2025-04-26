@@ -1,0 +1,68 @@
+.history {
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.history-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366; 
+}
+
+.history-logos {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-content {
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+.foundation {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.title-123 {
+    font-size:2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #003366;
+}
+
+.history-img {
+    display: block;
+    margin: 10px auto;
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+.img-123 {
+    display: block;
+    margin: 10px auto;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.p-123 {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+    text-align: justify;
+}

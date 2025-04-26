@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .nav-left a {
+    font-size: 60px;
+    font-weight: bold;
+    color: #3014cf; 
+    text-decoration: none;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .links a:hover {
+    color: #0077cc; 
+  }
+  
+  .navbar-dropdown-club,
+  .navbar-dropdown-equipe {
+    font-size: 30px;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .navbar-dropdown-club:hover,
+  .navbar-dropdown-equipe:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-right a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  
+  }
+  
+  .nav-right a:hover {
+    color: #0077cc;
+  }

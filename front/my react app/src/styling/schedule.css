@@ -1,0 +1,154 @@
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  
+
+}
+
+.schedule-title {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.schedule-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 5px;
+    background: linear-gradient(to bottom, #ff8a00, #e52e71);
+    border-radius: 5px;
+}
+
+
+.schedule-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    scrollbar-width: thin;
+    scrollbar-color: #ff8a00 #f0f0f0;
+}
+
+.schedule-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.schedule-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    border-radius: 10px;
+}
+
+.schedule-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+.schedule-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #1a2a6c);
+}
+
+.schedule-info {
+    flex: 1;
+    z-index: 1;
+}
+
+.schedule-team {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: capitalize;
+}
+
+.schedule-time {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.schedule-category {
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 8px;
+}
+
+.schedule-matchday {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.scedule-staduim {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.schedule-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-left: 15px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.schedule-div:hover .schedule-img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.schedule-div {
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}

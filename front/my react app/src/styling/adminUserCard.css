@@ -1,0 +1,153 @@
+.admin-user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-user-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 6px 25px rgba(0, 0, 0, 0.12),
+        inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.admin-user-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3498db, #9b59b6);
+}
+
+.admin-user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.admin-user-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 12px;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.admin-user-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.admin-user-email {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.admin-user-email::before {
+    content: '✉';
+    font-size: 0.9rem;
+}
+
+.admin-user-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    align-self: flex-start;
+    background-color: #e8f4fc;
+    color: #3498db;
+}
+
+.admin-user-role[data-role="ADMIN"] {
+    background-color: #fce8f6;
+    color: #9b59b6;
+}
+
+.admin-user-cart {
+    text-align: right;
+    padding-left: 1.5rem;
+    border-left: 1px dashed #dfe6e9;
+}
+
+.admin-user-items-number,
+.admin-user-total {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    color: #34495e;
+}
+
+.admin-user-items-number {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+
+.admin-user-items-number::before {
+    content: '🛒';
+    font-size: 0.8rem;
+}
+
+.admin-user-total {
+    font-weight: 600;
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+
+.admin-user-total::before {
+    content: '💰';
+    font-size: 0.8rem;
+}
+
+
+.admin-user-card[data-role="ADMIN"] {
+    animation: adminPulse 8s infinite;
+}
+
+@keyframes adminPulse {
+    0% {
+        border-left-color: rgba(52, 152, 219, 0.3);
+    }
+
+    50% {
+        border-left-color: rgba(155, 89, 182, 0.5);
+    }
+
+    100% {
+        border-left-color: rgba(52, 152, 219, 0.3);
+    }
+}

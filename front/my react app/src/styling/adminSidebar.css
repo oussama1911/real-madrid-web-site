@@ -1,0 +1,68 @@
+.admin-sidebar {
+    background-color: #5b83ab;
+    color: white;
+    width: 100%;
+    padding: 1rem 1rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.admin-sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+
+}
+
+.admin-sidebar a:hover {
+    background-color: #34495e;
+    color: white;
+    transform: translateX(4px);
+}
+
+.admin-sidebar a.active {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+
+.admin-sidebar a::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.admin-sidebar a[href="/admin/products"]::before {
+    content: "\f1b3";
+    
+}
+
+.admin-sidebar a[href="/admin/users"]::before {
+    content: "\f0c0";
+    
+}
+
+
+
+
+.admin-sidebar a {
+    padding: 0.6rem 1rem;
+}
+
+.admin-sidebar a:hover {
+    transform: translateY(2px);
+}

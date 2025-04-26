@@ -1,0 +1,55 @@
+.league-table {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .league-table h1 {
+    text-align: center;
+    color: #1a3e8c;
+    margin-bottom: 20px;
+  }
+  
+  .league-table table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .league-table th, 
+  .league-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .league-table th {
+    background-color: #1a3e8c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .league-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .league-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .league-table .team-name {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  
+  .league-table tr:nth-child(-n+4) {
+    background-color: #e6f2ff;
+  }
+  
+  
+  .league-table tr:nth-child(n+18) {
+    background-color: #ffebee;
+  }

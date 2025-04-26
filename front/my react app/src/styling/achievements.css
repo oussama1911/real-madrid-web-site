@@ -1,0 +1,126 @@
+.achievements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    
+    gap: 100px;
+   
+
+}
+.achievements-container {
+    background-image: url('https://t4.ftcdn.net/jpg/09/85/21/75/360_F_985217592_K1MsUtGvTUmSUW7GL4pWRnn8qu0W9o97.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.achievements-trophys {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.achievements-trophys:hover {
+    transform: scale(1.5); 
+    transition: transform 0.9s ease; 
+   
+}
+.achievements-point{
+    position: absolute;
+    top: 120px;
+
+}
+.achievements-point:hover {
+    color: rgb(255, 0, 0);
+    font-size: xxx-large;
+    
+ 
+   
+}
+
+.achievements-logo {
+    font-size: xxx-large;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+.achievements-name {
+    font-size: x-large;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #888796;
+    
+    
+}
+.achievements-hr {
+    
+    margin-top: 30px;
+    width: 1330px;
+    height: 2px;
+    background-color: #3014cf;
+    
+    margin-bottom: 20px;
+}
+.achievements-numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    
+}
+.achievements-numb1  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5cfd7;
+    margin-right: 185px;
+}
+
+.achievements-numb2  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5cfd7;
+    margin-right: 130px;
+}
+
+.achievements-numb3  {
+    font-size: 2rem;
+    font-weight: bold;
+   color: #a5cfd7;
+    margin-right: 150px;
+}
+.achievements-numb4  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5cfd7;
+    margin-right: 220px;
+}
+.achievements-numb5  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5cfd7;
+    margin-right: 240px
+}
+.achievements-numb6  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5cfd7;
+    margin-right: 230px
+}
+
+.achievements-numb7  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5cfd7;
+    
+}
